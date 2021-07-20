@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Register">
+
+    <!--TextView for Register Title-->
+    <TextView
+        android:id="@+id/textViewTitleRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="casual"
+        android:text="@string/title"
+        android:textColor="@color/Coral"
+        android:textSize="@android:dimen/app_icon_size"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407" />
+
+    <!--LinearLayout to create a registration form-->
+    <LinearLayout
+        android:id="@+id/linearLayoutRegister"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/form_design"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!--EditText for FirstName-->
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/name_icon_foreground"
+            android:ems="10"
+            android:hint="@string/hint_firstName"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/Grey" />
+
+        <!--EditText for Surname-->
+        <EditText
+            android:id="@+id/editTextSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/name_icon_foreground"
+            android:ems="10"
+            android:hint="@string/hint_surname"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/Grey" />
+
+        <!--EditText for EmailAddress-->
+        <EditText
+            android:id="@+id/editTextEmailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/email_icon_foreground"
+            android:ems="10"
+            android:drawablePadding="5dp"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/Grey" />
+
+        <!--EditText for Password-->
+        <EditText
+            android:id="@+id/editTextPasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/icon_password_foreground"
+            android:ems="10"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/Grey" />
+
+        <!--TextView for RadioButtonTitle-->
+        <TextView
+            android:id="@+id/textViewRBTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Choose your gender:"
+            android:textColor="@android:color/white" />
+
+        <!--LinearLayout for RadioGroup-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <!--RadioGroup for Gender-->
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--RadioButton for Male-->
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/Grey"
+                    android:drawableEnd="@drawable/male_icon"
+                    android:text="@string/gender_male"
+                    android:textColor="@android:color/white" />
+
+                <!--RadioButton for Female-->
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/Grey"
+                    android:drawableEnd="@drawable/female_icon"
+                    android:text="@string/gender_female"
+                    android:textColor="@android:color/white" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Button for Register-->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="387dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/button_design"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--Progress bar for Register process-->
+    <ProgressBar
+        android:id="@+id/create_acct_progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="95dp"
+        android:layout_height="155dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

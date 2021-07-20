@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ProductDetails">
+
+    <!--TextView for ProductDetail title-->
+    <TextView
+        android:id="@+id/textViewProductDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="cursive"
+        android:text="Product Detail"
+        android:textColor="@color/Coral"
+        android:textSize="@android:dimen/app_icon_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--LinearLayout for the Product Details form-->
+    <LinearLayout
+        android:layout_width="348dp"
+        android:layout_height="568dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="140dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProductDetail"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!--TextView for Product ID-->
+        <TextView
+            android:id="@+id/textViewTitleProductID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:text="ID"
+            android:textColor="@color/Grey"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--EditText for Product Title-->
+        <EditText
+            android:id="@+id/editTextProductTitleDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/title_icon"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="Product Title"
+            android:textColor="@color/Grey" />
+
+        <!--EditText for Product Description-->
+        <EditText
+            android:id="@+id/editTextProductDescriptionDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/icon_description"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="Product Description"
+            android:textColor="@color/Grey" />
+
+        <!--EditText for Product Price-->
+        <EditText
+            android:id="@+id/editTextPriceDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/icon_money"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="Price"
+            android:textColor="@color/Grey" />
+
+        <!--Button for Edit Product-->
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_design"
+            android:text="Edit"
+            android:textColor="@android:color/white" />
+
+        <!--EditText for Mark As Purchased-->
+        <Button
+            android:id="@+id/buttonMark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_design"
+            android:text="Mark as purchased"
+            android:textColor="@android:color/white" />
+
+        <!--EditText for Share Product-->
+        <Button
+            android:id="@+id/buttonShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_design"
+            android:text="Share"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

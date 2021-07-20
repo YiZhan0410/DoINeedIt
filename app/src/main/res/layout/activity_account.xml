@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Account">
+
+    <!--TextView for Account Title-->
+    <TextView
+        android:id="@+id/textViewAccountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="cursive"
+        android:text="My Account"
+        android:textColor="@color/Coral"
+        android:textSize="@android:dimen/app_icon_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--LinearLayout for Account Form-->
+    <LinearLayout
+        android:layout_width="321dp"
+        android:layout_height="233dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/form_design"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAccountTitle"
+        app:layout_constraintVertical_bias="0.196">
+
+        <!--EditText for FirstName-->
+        <EditText
+            android:id="@+id/editTextAccountFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/name_icon_foreground"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="First Name"
+            android:textColor="@color/Grey" />
+
+        <!--EditText for Surname-->
+        <EditText
+            android:id="@+id/editTextAccountSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/name_icon_foreground"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="Surname"
+            android:textColor="@color/Grey" />
+
+        <!--EditText for Gender-->
+        <EditText
+            android:id="@+id/editTextAccountGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/gender_icon"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="Gender"
+            android:textColor="@color/Grey" />
+
+        <!--Button to Update-->
+        <Button
+            android:id="@+id/buttonAccountUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_design"
+            android:padding="5dp"
+            android:text="Update"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
