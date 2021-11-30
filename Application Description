@@ -1,0 +1,12 @@
+You are required to develop a prototype application for the Android operating systems which will include at least all of the core requirements. 
+
+Core requirements of the app:
+- Home screen with Login or Signup - the point of entry for your app.
+- User registration
+- Manage my items
+- Delete / Forget items
+- Edit items
+- Mark as purchased
+- Create an item
+- Item Delegation
+- The ability to send an item as an SMS to another phone / contact. 
